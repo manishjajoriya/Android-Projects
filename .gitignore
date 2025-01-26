@@ -1,15 +1,32 @@
+# Ignore .iml files
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+
+# Ignore Gradle cache and local settings
+.gradle/
 local.properties
+
+# Ignore IntelliJ IDEA/Android Studio specific files
+.idea/
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore build output directories
+/build/
+*/build/
+
+# Ignore debug captures
+captures/
+
+# Ignore external native builds
+.externalNativeBuild/
+.cxx/
+
+# Duplicate ignore for nested local.properties (if necessary)
+*/local.properties
