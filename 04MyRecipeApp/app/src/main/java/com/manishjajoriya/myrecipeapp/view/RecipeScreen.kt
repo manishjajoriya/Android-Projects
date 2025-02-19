@@ -21,14 +21,12 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.viewmodel.compose.viewModel
 import coil.compose.rememberAsyncImagePainter
 import com.manishjajoriya.myrecipeapp.model.Category
 import com.manishjajoriya.myrecipeapp.viewModel.MainViewModel
 
 @Composable
 fun RecipeScreen(innerPaddingValues: PaddingValues,viewState: MainViewModel.RecipeState, navigateToDetail: (Category) -> Unit) {
-    val recipeViewModel: MainViewModel = viewModel()
     Box(modifier = Modifier.fillMaxSize().padding(innerPaddingValues)) {
         when {
             viewState.loading -> {
